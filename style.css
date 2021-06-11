@@ -1,0 +1,45 @@
+body{
+  font-size: 14px;
+}
+.container{
+  margin: 30px auto;
+  width: 500px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.menu{
+  display: flex;
+}
+.menu li a{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 5px 10px;
+  color: #333;
+  border-radius: 4px 4px 0 0;
+}
+.menu li a.active{
+  background-color: #333;
+  color: white;
+}
+.content.active{
+  background-color: #333;
+  color: white;
+  display: block;
+}
+.content{
+  display: none;
+  min-height: 150px;
+  padding: 10px;
+}
+.menu li a:not(.active):hover{
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
